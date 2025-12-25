@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Fritzguard - The Order Of Taste</title>
-  <meta content="Fritzguard - Premium Frites Experience" property="og:title" />
-  <meta name="description" content="Authentic Belgian Restaurant 🇧🇪🥔">
+  <meta content="Fritzguard Menu - Premium Frites Experience" property="og:title" />
+  <meta name="description" content="Fritzguard Menu - Authentic Belgian Restaurant 🇧🇪🥔">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link
     href="https://cdn.prod.website-files.com/68dd3f108c36a61ef80ede4c/css/fritesatelier-development.webflow.shared.d7953abef.css"
@@ -182,121 +182,8 @@
       fill: currentColor;
     }
   </style>
-  <script type="application/json" id="weglot-data">
-      {
-        "allLanguageUrls": {
-          "en": "https://www.fritesatelier.com",
-          "nl": "https://www.fritesatelier.com/nl",
-          "fr": "https://www.fritesatelier.com/fr"
-        },
-        "originalCanonicalUrl": "https://www.fritesatelier.com/",
-        "originalPath": "/",
-        "settings": {
-          "auto_switch": false,
-          "auto_switch_fallback": null,
-          "category": 7,
-          "custom_settings": {
-            "button_style": {
-              "with_name": false,
-              "full_name": false,
-              "is_dropdown": false,
-              "with_flags": false,
-              "flag_type": "rectangle_mat"
-            },
-            "switchers": [],
-            "translate_search": false,
-            "loading_bar": true,
-            "hide_switcher": false,
-            "translate_images": false,
-            "subdomain": false,
-            "wait_transition": true,
-            "dynamic": ""
-          },
-          "deleted_at": null,
-          "dynamics": [{ "value": "." }],
-          "excluded_blocks": [
-            { "value": ".no-wg-translate", "description": "Dont translate" }
-          ],
-          "excluded_paths": [
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/jobs/floor-manager-ghent"
-            },
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/jobs/catering-employee-roosendaal"
-            },
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/service-office-jobs/all-round-management-intern"
-            },
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/jobs/hr-medewerker-ghent"
-            },
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/jobs/floor-manager-brussels"
-            },
-            {
-              "excluded_languages": [],
-              "language_button_displayed": false,
-              "type": "IS_EXACTLY",
-              "value": "/jobs/floor-manager-antwerp"
-            }
-          ],
-          "external_enabled": false,
-          "host": "www.fritesatelier.com",
-          "is_dns_set": true,
-          "is_https": true,
-          "language_from": "en",
-          "language_from_custom_flag": null,
-          "language_from_custom_name": null,
-          "languages": [
-            {
-              "connect_host_destination": null,
-              "custom_code": null,
-              "custom_flag": null,
-              "custom_local_name": null,
-              "custom_name": null,
-              "enabled": true,
-              "language_to": "nl"
-            },
-            {
-              "connect_host_destination": null,
-              "custom_code": null,
-              "custom_flag": null,
-              "custom_local_name": null,
-              "custom_name": null,
-              "enabled": true,
-              "language_to": "fr"
-            }
-          ],
-          "media_enabled": false,
-          "page_views_enabled": false,
-          "technology_id": 13,
-          "technology_name": "Webflow",
-          "translation_engine": 3,
-          "url_type": "SUBDIRECTORY",
-          "versions": { "translation": 1765976096 }
-        }
-      }
-    </script>
   <script async="" src="https://cdn.weglot.com/weglot.min.js?api_key=wg_0f3c27fbdf08120ee54e7619fbd8b8550"
     type="text/javascript"></script>
-  <link href="https://www.fritesatelier.com" hreflang="en" rel="alternate" />
-  <link href="https://www.fritesatelier.com/nl" hreflang="nl" rel="alternate" />
-  <link href="https://www.fritesatelier.com/fr" hreflang="fr" rel="alternate" />
 </head>
 
 <body data-theme-nav="light" data-bg-nav="light" class="body-dark">
@@ -442,12 +329,18 @@
         .section_home-dishes {
           background-color: var(--border-color-light);
         }
+
+        @media screen and (max-width: 991px) {
+          .menu_links [data-text-fade-reveal] {
+            display: block !important;
+          }
+        } 
       </style>
     </div>
     <nav class="nav">
       <div class="padding-global">
         <div class="nav_wrapper">
-          <a href="/" aria-current="page" class="nav_logo-wrapper w-inline-block w--current"
+          <a href="index.html" aria-current="page" class="nav_logo-wrapper w-inline-block w--current"
             style="display: flex; align-items: center; gap: 5px; font-size: 30px;">
             <img src="./images/fritzguard-logo-gold.png" width="70px" height="70px" />
             <div style="display: flex; flex-direction: column;">
@@ -509,7 +402,16 @@
             <a data-faded-link="" href="#collaboration" class="menu_link-item w-inline-block">
               <div class="menu_link">COLLABORATION</div>
             </a>
-            <link rel="prerender" href="/business" />
+            <a data-text-fade-reveal="" style="display: none;" data-wf--button-dark--variant="bg-black"
+              data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
+              href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
+              class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block">
+              <div class="button_text-wrapper">
+                <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68" style="text-align: center;">
+                  Order A Table
+                </div>
+              </div>
+            </a>
           </div>
           <div class="menu_locations">
             <a data-faded-link="" href="#location" class="menu_location-item w-inline-block">
@@ -726,7 +628,7 @@
                     <h2 data-text-fade-reveal="" class="heading-medium text-color-neutral-100">
                       signature dishes
                     </h2>
-                    <a data-element-fade-reveal="" href="/food-and-drinks" style="background-color: #122b1b;"
+                    <a data-element-fade-reveal="" href="menu.html" style="background-color: #122b1b;"
                       class="button-light_wrapper w-inline-block">
                       <div class="button_text-wrapper">
                         <div class="button_text text-color-neutral-100" style=" color: #f4c430;">
