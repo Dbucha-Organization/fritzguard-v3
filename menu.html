@@ -8,9 +8,7 @@
     <meta content="Fritzguard - Premium Frites Experience" property="og:title" />
     <meta name="description" content="Authentic Belgian Restaurant 🇧🇪🥔">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link
-        href="https://cdn.prod.website-files.com/68dd3f108c36a61ef80ede4c/css/fritesatelier-development.webflow.shared.d7953abef.css"
-        rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://use.typekit.net/zgp3gjs.js" type="text/javascript"></script>
     <script type="text/javascript">
         try {
@@ -144,10 +142,6 @@
     </script>
 
     <!-- End Google Tag Manager -->
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/uc-file-uploader-inline.min.css" />
-
     <script type="module">
         import * as UC from "https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/file-uploader.min.js";
         UC.defineComponents(UC);
@@ -423,7 +417,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="menu_sub-links">
+                <div class="menu_sub-links" style="margin-top: 40px;">
                     <div class="lang-switcher_wrapper">
                         <a data-lang="en" href="#" class="lang_item w-inline-block">
                             <div class="heading-xsmall">en</div>
@@ -438,12 +432,16 @@
                     <div class="menu_sub-links_right">
                         <a data-faded-link="" href="https://www.instagram.com/fritzguard.brussels" target="_blank"
                             class="menu_sub-link_item w-inline-block">
+                            <img src="./images/icons/fritzguard-instagram.svg" width="15px"
+                                style="margin-right: 5px;" />
                             <div class="heading-xsmall">instagram</div>
                         </a><a data-faded-link="" href="https://www.facebook.com/p/Fritzguard-Brussels-100090719001550/"
                             target="_blank" class="menu_sub-link_item w-inline-block">
+                            <img src="./images/icons/fritzguard-facebook.svg" width="15px" style="margin-right: 5px;" />
                             <div class="heading-xsmall">facebook</div>
                         </a><a data-faded-link="" href="https://www.tiktok.com/@fritzguard.brussels" target="_blank"
                             class="menu_sub-link_item w-inline-block">
+                            <img src="./images/icons/fritzguard-tiktok.svg" width="15px" style="margin-right: 5px;" />
                             <div class="heading-xsmall">tiktok</div>
                         </a>
                     </div>
@@ -480,8 +478,7 @@
                                     class="footer_menu-wrapper">
                                     <div id="w-node-_63cdfad1-d416-555a-3323-e00c629908ea-629908b3"
                                         class="footer_menu-list">
-                                        <a data-faded-link="" href="index.html" id="footerHomeLink"
-                                            style="cursor: pointer;"
+                                        <a data-faded-link="" href="index.html" id="footerHomeLink" style="cursor: pointer;"
                                             class="button-link_wrapper w-inline-block w--current">
                                             <div class="button_text-wrapper">
                                                 <div class="button_text">home</div>
@@ -491,7 +488,7 @@
                                             <div class="button_text-wrapper">
                                                 <div class="button_text">Our story</div>
                                             </div>
-                                        </a><a data-faded-link="" href="index.html#menu-section"
+                                        </a><a data-faded-link="" href="menu.html"
                                             class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
                                                 <div class="button_text">Menu</div>
@@ -518,11 +515,7 @@
                                                 <div class="button_text">Order a table</div>
                                             </div>
                                         </a>
-                                    </div>
-                                    <div id="w-node-_63cdfad1-d416-555a-3323-e00c629908f5-629908b3"
-                                        class="footer_menu-list">
-                                        <a data-faded-link="" href="index.html#jobs"
-                                            class="button-link_wrapper w-inline-block">
+                                        <a data-faded-link="" href="index.html#jobs" class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
                                                 <div class="button_text">jobs</div>
                                             </div>
@@ -532,18 +525,24 @@
                                         class="footer_menu-list">
                                         <a data-faded-link="" href="https://www.instagram.com/fritzguard.brussels"
                                             target="_blank" class="button-link_wrapper w-inline-block">
-                                            <div class="button_text-wrapper">
+                                            <div class="button_text-wrapper social-link-button">
+                                                <img src="./images/icons/fritzguard-instagram.svg" width="16"
+                                                    height="16" />
                                                 <div class="button_text">instagram</div>
                                             </div>
                                         </a><a data-faded-link=""
                                             href="https://www.facebook.com/p/Fritzguard-Brussels-100090719001550/"
                                             target="_blank" class="button-link_wrapper w-inline-block">
-                                            <div class="button_text-wrapper">
+                                            <div class="button_text-wrapper social-link-button">
+                                                <img src="./images/icons/fritzguard-facebook.svg" width="16"
+                                                    height="16" />
                                                 <div class="button_text">facebook</div>
                                             </div>
                                         </a><a data-faded-link="" href="https://www.tiktok.com/@fritzguard.brussels"
                                             target="_blank" class="button-link_wrapper w-inline-block">
-                                            <div class="button_text-wrapper">
+                                            <div class="button_text-wrapper social-link-button">
+                                                <img src="./images/icons/fritzguard-tiktok.svg" width="16"
+                                                    height="16" />
                                                 <div class="button_text">tiktok</div>
                                             </div>
                                         </a>

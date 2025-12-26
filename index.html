@@ -8,9 +8,7 @@
   <meta content="Fritzguard Menu - Premium Frites Experience" property="og:title" />
   <meta name="description" content="Fritzguard Menu - Authentic Belgian Restaurant 🇧🇪🥔">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link
-    href="https://cdn.prod.website-files.com/68dd3f108c36a61ef80ede4c/css/fritesatelier-development.webflow.shared.d7953abef.css"
-    rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://use.typekit.net/zgp3gjs.js" type="text/javascript"></script>
   <script type="text/javascript">
     try {
@@ -28,7 +26,10 @@
     })(window, document);
   </script>
   <style>
-    /* ------------------------- Lenis Scroll Fix -------------------------------------------------- */
+    /* ---
+    ---------------------- Lenis Scroll Fix -------------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
 
     html {
       height: auto;
@@ -37,6 +38,7 @@
     /* ------------------------- Font Smoothing -------------------------------------------------- */
 
     body {
+      font-family: 'Inter', sans-serif;
       text-rendering: optimizeLegibility !important;
       -webkit-font-smoothing: antialiased !important;
       -moz-osx-font-smoothing: grayscale !important;
@@ -116,6 +118,20 @@
     .element-mask {
       height: auto;
     }
+
+    .heading-medium {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-style: italic;
+      font-size: 50px;
+    }
+
+    .text-size-regular {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      letter-spacing: -0.01em;
+    }
   </style>
 
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c8188f85-4419-4ff0-b285-4097f032a4c9"
@@ -137,9 +153,6 @@
   </script>
 
   <!-- End Google Tag Manager -->
-
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/uc-file-uploader-inline.min.css" />
 
   <script type="module">
     import * as UC from "https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/file-uploader.min.js";
@@ -334,7 +347,7 @@
           .menu_links [data-text-fade-reveal] {
             display: block !important;
           }
-        } 
+        }
       </style>
     </div>
     <nav class="nav">
@@ -419,7 +432,7 @@
             </a>
           </div>
         </div>
-        <div class="menu_sub-links">
+        <div class="menu_sub-links" style="margin-top: 40px;">
           <div class="lang-switcher_wrapper">
             <a data-lang="en" href="#" class="lang_item w-inline-block">
               <div class="heading-xsmall">en</div>
@@ -434,12 +447,15 @@
           <div class="menu_sub-links_right">
             <a data-faded-link="" href="https://www.instagram.com/fritzguard.brussels" target="_blank"
               class="menu_sub-link_item w-inline-block">
+              <img src="./images/icons/fritzguard-instagram.svg" width="15px" style="margin-right: 5px;" />
               <div class="heading-xsmall">instagram</div>
             </a><a data-faded-link="" href="https://www.facebook.com/p/Fritzguard-Brussels-100090719001550/"
               target="_blank" class="menu_sub-link_item w-inline-block">
+              <img src="./images/icons/fritzguard-facebook.svg" width="15px" style="margin-right: 5px;" />
               <div class="heading-xsmall">facebook</div>
             </a><a data-faded-link="" href="https://www.tiktok.com/@fritzguard.brussels" target="_blank"
               class="menu_sub-link_item w-inline-block">
+              <img src="./images/icons/fritzguard-tiktok.svg" width="15px" style="margin-right: 5px;" />
               <div class="heading-xsmall">tiktok</div>
             </a>
           </div>
@@ -448,7 +464,7 @@
     </div>
     <main class="main-wrapper">
       <div class="sections_wrapper">
-        <section data-theme-section="dark" data-parallax-section="" class="section_hero">
+        <section data-theme-section="light" data-parallax-section="" class="section_hero">
           <div data-scroll-overlay="" class="scroll-overlay is-home-hero"></div>
           <div data-parallax-section="" class="hero_background-video w-embed">
             <style>
@@ -537,7 +553,7 @@
             </div>
           </section>
         </section>
-        <section data-theme-section=" light" data-grow-section="" class="section_header-marquee">
+        <section data-theme-section="light" data-grow-section="" class="section_header-marquee">
           <div class="padding-global padding-section-medium">
             <div class="container">
               <div class="header-marquee_wrapper text-color-neutral-0">
@@ -557,7 +573,7 @@
                         facing the <span style="color: #fcdd94; font-weight: 600;">Bourse, Fritzguard
                           Brussels</span> is
                         a family passion project.<br><br>
-                        We envisioned a reimagined Belgian cuisine built around a unique concept: <span
+                        We envisioned a reimagined Belgian 🇧🇪 cuisine built around a unique concept: <span
                           style="color: #fcdd94; font-weight: 600;">loaded fries topped with great Belgian
                           classics</span>, reinterpreted with precision and creativity.<br><br>
                         Vol-au-vent, beef cheeks, Liège-style meatballs, moules-frites… and much more:
@@ -572,7 +588,7 @@
                         At Fritzguard, <span style="color: #fcdd94; font-weight: 600;">everything is
                           homemade</span>,
                         with no frozen products, using only fresh, local, and <span
-                          style="color: #fcdd94; font-weight: 600;">100% Belgian
+                          style="color: #fcdd94; font-weight: 600;">100% Belgian 🇧🇪
                         </span>ingredients.<br><br>
                         Designed in collaboration with renowned designers and architects, the project
                         combines
@@ -638,7 +654,12 @@
                     </a>
                   </div>
                 </div>
-                <div style="width: 60%; margin-top: 50px !important;">
+                <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 30px;">
+                  <img src="./images/branding/fritzguard-brending-logo.png" width="20%" />
+                  <img src="./images/branding/fritzguard-brending.png" width="20%" />
+                  <img src="./images/branding/fritzguard-brending-icon.png" width="20%" />
+                </div>
+                <div style="width: 60%; margin-top: 20px !important;">
                   <p data-text-fade-reveal="" id="w-node-fef53c33-0ca7-517f-2833-4a0b2b278ca6-2b278c99"
                     class="text-size-regular text-color-neutral-100">
                     Vol-au-vent, beef cheeks, Liège-style meatballs, moules-frites… and much more: each recipe was
@@ -666,7 +687,7 @@
                     </div>
                     <div data-dish-parallax="" id="w-node-fef53c33-0ca7-517f-2833-4a0b2b278cb7-2b278c99"
                       class="dishes_image-wrapper is-3">
-                      <img src="./images/products/fritzguard-french-fries.png" loading="eager"
+                      <img src="./images/products/fritzguard-hamburger-belgium.jpg" loading="eager"
                         alt="A box of fries with a white sauce on top." sizes="(max-width: 1440px) 100vw, 1440px"
                         class="dishes_image is-3" />
                       <div class="dishes_image_overlay"></div>
@@ -741,7 +762,8 @@
                       </p>
                       <p data-text-fade-reveal="" class="text-size-regular">
                         At Fritzguard, we don't just serve frites—we serve an experience. Join us and be part of a team
-                        that's dedicated to perfecting every detail, from sourcing the finest Belgian ingredients to
+                        that's dedicated to perfecting every detail, from sourcing the finest Belgian 🇧🇪 ingredients
+                        to
                         delivering exceptional service to our guests.
                       </p>
                       <p data-text-fade-reveal="" class="text-size-regular">
@@ -806,7 +828,7 @@
                       </h2>
                     </div>
                     <p data-text-fade-reveal="" class="text-size-regular max-width-35em">
-                      Rue Jules Van Praet 7, 1000 Bruxelles, Belgium
+                      Rue Jules Van Praet 7, 1000 Bruxelles, Belgium 🇧🇪
                     </p>
                     <div style="width: 100%; height: 500px; border-radius: 12px; overflow: hidden; margin-top: 40px;">
                       <iframe
@@ -821,7 +843,7 @@
             </div>
           </div>
         </section>
-        <div id="collaboration" class="padding-global padding-section-medium background-color-brand-100"
+        <section data-theme-section="dark" id="collaboration" class="padding-global padding-section-medium background-color-brand-100"
           style="background-color: var(--color--neutral-0);">
           <div class="container">
             <div class="business_wrapper">
@@ -842,7 +864,7 @@
                   <div class="section-heading">
                     <p data-text-fade-reveal="" class="text-size-regular">
                       <strong class="bold-text">
-                        Fritzguard is more than a restaurant — it’s a modern Belgian culinary concept built around
+                        Fritzguard is more than a restaurant, it’s a modern Belgian 🇧🇪 culinary concept built around
                         signature frites and iconic classics.
                         If you have collaboration ideas or proposals, feel free to contact us at: <br> <a
                           href="tel:+3223310029"
@@ -858,7 +880,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <div fs-smartlightbox-element="lightbox" style="display: none; opacity: 0" class="food-drink_modal-wrapper">
         <div fs-smartlightbox-element="trigger-close" data-lenis-start="" aria-label="close food and drink modal"
@@ -932,8 +954,6 @@
                         <div class="button_text">Order a table</div>
                       </div>
                     </a>
-                  </div>
-                  <div id="w-node-_63cdfad1-d416-555a-3323-e00c629908f5-629908b3" class="footer_menu-list">
                     <a data-faded-link="" href="#jobs" class="button-link_wrapper w-inline-block">
                       <div class="button_text-wrapper">
                         <div class="button_text">jobs</div>
@@ -943,17 +963,20 @@
                   <div id="w-node-_63cdfad1-d416-555a-3323-e00c62990903-629908b3" class="footer_menu-list">
                     <a data-faded-link="" href="https://www.instagram.com/fritzguard.brussels" target="_blank"
                       class="button-link_wrapper w-inline-block">
-                      <div class="button_text-wrapper">
+                      <div class="button_text-wrapper social-link-button">
+                        <img src="./images/icons/fritzguard-instagram.svg" width="16" height="16" />
                         <div class="button_text">instagram</div>
                       </div>
                     </a><a data-faded-link="" href="https://www.facebook.com/p/Fritzguard-Brussels-100090719001550/"
                       target="_blank" class="button-link_wrapper w-inline-block">
-                      <div class="button_text-wrapper">
+                      <div class="button_text-wrapper social-link-button">
+                        <img src="./images/icons/fritzguard-facebook.svg" width="16" height="16" />
                         <div class="button_text">facebook</div>
                       </div>
                     </a><a data-faded-link="" href="https://www.tiktok.com/@fritzguard.brussels" target="_blank"
                       class="button-link_wrapper w-inline-block">
-                      <div class="button_text-wrapper">
+                      <div class="button_text-wrapper social-link-button">
+                        <img src="./images/icons/fritzguard-tiktok.svg" width="16" height="16" />
                         <div class="button_text">tiktok</div>
                       </div>
                     </a>
