@@ -362,7 +362,7 @@
                 style="background: linear-gradient(135deg, #ffb300 30%, #f4c430 60%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 8px rgba(252, 221, 148, 0.4)) drop-shadow(0 0 20px rgba(244, 196, 48, 0.3)); text-shadow: 0 0 0px rgba(252, 221, 148, 0.5); font-family: var(--font--headings);">
                 Fritzguard</p>
               <p
-                style="font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; margin: 0; color: #fcdd94; font-weight: 300; font-family: var(--font--headings);">
+                style="font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; margin: 0; color: #fcdd94; font-weight: 300; font-family: var(--font--headings);" data-i18n="nav.logo_sub_title">
                 The Order Of Taste
               </p>
             </div>
@@ -375,7 +375,7 @@
                   href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
                   class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block" data-google-maps-reserve>
                   <div class="button_text-wrapper">
-                    <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68">
+                    <div data-i18n="nav.order" class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68">
                       Order A Table
                     </div>
                   </div>
@@ -568,7 +568,7 @@
                         The Best In Belgium
                       </h2>
                       <p style="text-align: center; line-height: 1.8; letter-spacing: 0.5px; font-weight: 300;"
-                        class="text-size-regular">
+                        class="text-size-regular" data-i18n="story.content">
                         <span style="color: #fcdd94; font-weight: 600;">Born in 2022</span>, in the heart
                         of Brussels,
                         facing the <span style="color: #fcdd94; font-weight: 600;">Bourse, Fritzguard
@@ -637,18 +637,18 @@
           <div class="dishes_header-wrapper" id="menu-section">
             <div class="padding-global padding-section-medium is-100per">
               <div class="dishes_wrapper" style="justify-content: space-around;">
-                <p data-text-fade-reveal="" class="heading-xsmall text-color-neutral-100">
+                <p data-text-fade-reveal="" class="heading-xsmall text-color-neutral-100" data-i18n="menu.label">
                   Menu
                 </p>
                 <div class="dishes_heading" style="position: relative;">
                   <div class="dish_heading_content">
-                    <h2 data-text-fade-reveal="" class="heading-medium text-color-neutral-100">
+                    <h2 data-text-fade-reveal="" class="heading-medium text-color-neutral-100" data-i18n="menu.title">
                       signature dishes
                     </h2>
                     <a data-element-fade-reveal="" href="menu.html" style="background-color: #122b1b;"
                       class="button-light_wrapper w-inline-block">
                       <div class="button_text-wrapper">
-                        <div class="button_text text-color-neutral-100" style=" color: #f4c430;">
+                        <div class="button_text text-color-neutral-100" style=" color: #f4c430;" data-i18n="menu.button">
                           discover full menu
                         </div>
                       </div>
@@ -662,7 +662,7 @@
                 </div>
                 <div style="width: 60%; margin-top: 20px !important;">
                   <p data-text-fade-reveal="" id="w-node-fef53c33-0ca7-517f-2833-4a0b2b278ca6-2b278c99"
-                    class="text-size-regular text-color-neutral-100">
+                    class="text-size-regular text-color-neutral-100" data-i18n="menu.description">
                     Vol-au-vent, beef cheeks, Liège-style meatballs, moules-frites… and much more: each recipe was
                     created, tested, and perfected over nearly two years, alongside experienced chefs.
                     <br><br>
@@ -853,11 +853,11 @@
             <div class="business_wrapper">
               <div class="w-layout-grid grid-global">
                 <div id="w-node-a1154a25-f8cc-427b-784b-4417b75e0f49-f80ede28" class="section-header">
-                  <p data-text-fade-reveal="" class="heading-xsmall">
+                  <p data-text-fade-reveal="" class="heading-xsmall" data-i18n="collab.heading">
                     COLLABORATION
                   </p>
                   <div class="section-heading">
-                    <h2 data-text-fade-reveal="" class="heading-medium">
+                    <h2 data-text-fade-reveal="" class="heading-medium" data-i18n="collab.title">
                       COLLABORATE <br />WITH US
                     </h2>
                   </div>
@@ -865,9 +865,7 @@
               </div>
               <div class="w-layout-grid grid-global">
                 <div id="w-node-a1154a25-f8cc-427b-784b-4417b75e0f52-f80ede28" class="section-header">
-                  <div class="section-heading">
-                    <p data-text-fade-reveal="" class="text-size-regular">
-                      <strong class="bold-text">
+                    <p data-text-fade-reveal="" class="text-size-regular" data-i18n="collab.content">
                         Fritzguard is more than a restaurant, it’s a modern Belgian 🇧🇪 culinary concept built around
                         signature frites and iconic classics.
                         If you have collaboration ideas or proposals, feel free to contact us at: <br> <a
@@ -1295,39 +1293,6 @@
   </script>
 
   <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-  <script>
-    Weglot.initialize({ api_key: "wg_0f3c27fbdf08120ee54e7619fbd8b8550" });
-
-    function updateActiveLanguage() {
-      const currentLang = Weglot.getCurrentLang();
-      document
-        .querySelectorAll(".lang-switcher_wrapper .lang_item")
-        .forEach((item) => {
-          item.classList.remove("active");
-        });
-      const currentLangElement = document.querySelector(
-        '.lang-switcher_wrapper [data-lang="' + currentLang + '"]'
-      );
-      if (currentLangElement) currentLangElement.classList.add("active");
-    }
-
-    Weglot.on("initialized", () => {
-      updateActiveLanguage();
-    });
-    document
-      .querySelectorAll(".lang-switcher_wrapper [data-lang]")
-      .forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          setTimeout(() => {
-            Weglot.switchTo(this.getAttribute("data-lang"));
-            setTimeout(() => {
-              updateActiveLanguage();
-            }, 100);
-          }, 160);
-        });
-      });
-  </script>
 
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
   <script>
@@ -2014,6 +1979,20 @@
         const opacity = window.getComputedStyle(activeButton).opacity;
         console.log('✓ Active button opacity:', opacity);
       }
+
+      // Check 7: Verify data-i18n elements are being translated
+      const i18nElements = document.querySelectorAll('[data-i18n]');
+      console.log('✓ Elements with data-i18n found:', i18nElements.length);
+      
+      // Show a sample of translated elements
+      console.log('Sample translations:');
+      let sampleCount = 0;
+      i18nElements.forEach((el) => {
+        if (sampleCount < 5) {
+          console.log(`  - ${el.getAttribute('data-i18n')}: "${el.textContent.substring(0, 50)}..."`);
+          sampleCount++;
+        }
+      });
     });
   </script>
 </body>

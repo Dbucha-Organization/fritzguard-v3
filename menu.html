@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Published: Mon Dec 22 2025 13:21:17 GMT+0000 (Coordinated Universal Time) -->
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8" />
@@ -841,40 +840,6 @@
     </script>
 
     <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-    <script>
-        Weglot.initialize({ api_key: "wg_0f3c27fbdf08120ee54e7619fbd8b8550" });
-
-        function updateActiveLanguage() {
-            const currentLang = Weglot.getCurrentLang();
-            document
-                .querySelectorAll(".lang-switcher_wrapper .lang_item")
-                .forEach((item) => {
-                    item.classList.remove("active");
-                });
-            const currentLangElement = document.querySelector(
-                '.lang-switcher_wrapper [data-lang="' + currentLang + '"]'
-            );
-            if (currentLangElement) currentLangElement.classList.add("active");
-        }
-
-        Weglot.on("initialized", () => {
-            updateActiveLanguage();
-        });
-        document
-            .querySelectorAll(".lang-switcher_wrapper [data-lang]")
-            .forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    setTimeout(() => {
-                        Weglot.switchTo(this.getAttribute("data-lang"));
-                        setTimeout(() => {
-                            updateActiveLanguage();
-                        }, 100);
-                    }, 160);
-                });
-            });
-    </script>
-
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
     <script>
         let lenis;
@@ -1560,6 +1525,20 @@
                 const opacity = window.getComputedStyle(activeButton).opacity;
                 console.log('✓ Active button opacity:', opacity);
             }
+
+            // Check 7: Verify data-i18n elements are being translated
+            const i18nElements = document.querySelectorAll('[data-i18n]');
+            console.log('✓ Elements with data-i18n found:', i18nElements.length);
+            
+            // Show a sample of translated elements
+            console.log('Sample translations:');
+            let sampleCount = 0;
+            i18nElements.forEach((el) => {
+              if (sampleCount < 5) {
+                console.log(`  - ${el.getAttribute('data-i18n')}: "${el.textContent.substring(0, 50)}..."`);
+                sampleCount++;
+              }
+            });
         });
     </script>
 </body>
