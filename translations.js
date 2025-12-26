@@ -354,6 +354,7 @@ if (document.readyState === 'loading') {
     setTimeout(() => {
       console.log('Setting up language switcher, current lang:', window.i18n.getLanguage());
       setupLanguageSwitcher();
+      updateGoogleMapsLinks();
     }, 50);
   });
 } else {
@@ -363,6 +364,7 @@ if (document.readyState === 'loading') {
   setTimeout(() => {
     console.log('Setting up language switcher, current lang:', window.i18n.getLanguage());
     setupLanguageSwitcher();
+    updateGoogleMapsLinks();
   }, 50);
 }
 
@@ -391,6 +393,7 @@ function setupLanguageSwitcher() {
       console.log('Language button clicked:', selectedLang);
       window.i18n.setLanguage(selectedLang);
       updateActiveLangButton();
+      updateGoogleMapsLinks();
     });
   });
   
@@ -428,6 +431,31 @@ function updateActiveLangButton() {
   if (!foundActive) {
     console.warn('⚠️ No matching button found for language:', currentLang);
   }
+}
+
+/**
+ * Update Google Maps reservation links based on current language
+ * Changes the hl parameter to match the selected language
+ */
+function updateGoogleMapsLinks() {
+  const currentLang = window.i18n.getLanguage();
+  const languageMap = {
+    'en': 'en-BE',
+    'nl': 'nl-BE',
+    'fr': 'fr-BE'
+  };
+  
+  const hlParam = languageMap[currentLang] || 'en-BE';
+  const mapsLinks = document.querySelectorAll('[data-google-maps-reserve]');
+  
+  mapsLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    // Replace or add the hl parameter
+    const urlObj = new URL(href);
+    urlObj.searchParams.set('hl', hlParam);
+    link.setAttribute('href', urlObj.toString());
+    console.log('✓ Updated Google Maps link hl parameter to:', hlParam);
+  });
 }
 
 // Export for module systems

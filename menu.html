@@ -355,7 +355,7 @@
                                 <a data-text-fade-reveal="" data-wf--button-dark--variant="bg-black"
                                     data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
                                     href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-                                    class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block">
+                                    class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block" data-google-maps-reserve>
                                     <div class="button_text-wrapper">
                                         <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68">
                                             Order A Table
@@ -403,7 +403,7 @@
                         <a data-text-fade-reveal="" style="display: none;" data-wf--button-dark--variant="bg-black"
                             data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
                             href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-                            class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block">
+                            class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block" data-google-maps-reserve>
                             <div class="button_text-wrapper">
                                 <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68"
                                     style="text-align: center;">
@@ -479,7 +479,8 @@
                                     class="footer_menu-wrapper">
                                     <div id="w-node-_63cdfad1-d416-555a-3323-e00c629908ea-629908b3"
                                         class="footer_menu-list">
-                                        <a data-faded-link="" href="index.html" id="footerHomeLink" style="cursor: pointer;"
+                                        <a data-faded-link="" href="index.html" id="footerHomeLink"
+                                            style="cursor: pointer;"
                                             class="button-link_wrapper w-inline-block w--current">
                                             <div class="button_text-wrapper">
                                                 <div class="button_text" data-i18n="nav.home">home</div>
@@ -511,12 +512,13 @@
                                         </a>
                                         <a data-faded-link="" target="_blank"
                                             href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-                                            class="button-link_wrapper w-inline-block">
+                                            class="button-link_wrapper w-inline-block" data-google-maps-reserve>
                                             <div class="button_text-wrapper">
                                                 <div class="button_text">Order a table</div>
                                             </div>
                                         </a>
-                                        <a data-faded-link="" href="index.html#jobs" class="button-link_wrapper w-inline-block">
+                                        <a data-faded-link="" href="index.html#jobs"
+                                            class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
                                                 <div class="button_text" data-i18n="nav.jobs">jobs</div>
                                             </div>
@@ -558,11 +560,19 @@
                 <div class="padding-global">
                     <div class="container">
                         <div class="footer-bottom_wrapper">
-                            <div class="footer-bottom_content">
+                            <div class="footer-bottom_content"
+                                style="display: flex; justify-content: space-between; width: 100%;">
                                 <p class="text-size-legal text-color-neutral-100">
                                     ©
                                     <span data="year" class="copyright_year">YEAR</span> Fritzguard
-
+                                </p>
+                                <p class="text-size-legal text-color-neutral-100"
+                                    style="margin-top: 10px; font-size: 10px !important; line-height: 1.6;">
+                                    <strong>BELORIA SRL</strong><br>
+                                    TVA BE1027.929.982<br>
+                                    Place Saint-Géry 26<br>
+                                    1000 Bruxelles<br>
+                                    Belgium
                                 </p>
                             </div>
                             <!-- Todo -->
@@ -1511,28 +1521,28 @@
     <!-- Translation System Debug & Verification -->
     <script>
         // Debug script to verify translation system and active language button
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             console.log('=== Translation System Status ===');
-            
+
             // Check 1: Verify window.i18n exists
             if (typeof window.i18n === 'undefined') {
                 console.error('❌ window.i18n is not defined');
                 return;
             }
             console.log('✓ window.i18n exists');
-            
+
             // Check 2: Get current language
             const currentLang = window.i18n.getLanguage();
             console.log('✓ Current language:', currentLang);
-            
+
             // Check 3: Get saved language from localStorage
             const savedLang = localStorage.getItem('fritzguard_language');
             console.log('✓ Saved in localStorage:', savedLang);
-            
+
             // Check 4: Verify lang buttons exist
             const langButtons = document.querySelectorAll('.lang-switcher_wrapper [data-lang]');
             console.log('✓ Language buttons found:', langButtons.length);
-            
+
             // Check 5: Check which button has .active class
             const activeButton = document.querySelector('.lang-switcher_wrapper [data-lang].active');
             if (activeButton) {
@@ -1544,7 +1554,7 @@
                     console.log(`  ${i}: data-lang="${btn.getAttribute('data-lang')}" class="${btn.className}"`);
                 });
             }
-            
+
             // Check 6: Verify opacity styling
             if (activeButton) {
                 const opacity = window.getComputedStyle(activeButton).opacity;

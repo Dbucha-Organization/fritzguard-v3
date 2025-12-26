@@ -373,7 +373,7 @@
                 <a data-text-fade-reveal="" data-wf--button-dark--variant="bg-black"
                   data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
                   href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-                  class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block">
+                  class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block" data-google-maps-reserve>
                   <div class="button_text-wrapper">
                     <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68">
                       Order A Table
@@ -419,7 +419,7 @@
             <a data-text-fade-reveal="" style="display: none;" data-wf--button-dark--variant="bg-black"
               data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
               href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-              class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block">
+              class="button-dark_wrapper w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68 w-inline-block" data-google-maps-reserve>
               <div class="button_text-wrapper">
                 <div class="button_text w-variant-cdc199fa-c6fa-81a9-9d6a-faca36e56f68" style="text-align: center;">
                   Order A Table
@@ -768,10 +768,13 @@
                         delivering exceptional service to our guests.
                       </p>
                       <p data-text-fade-reveal="" class="text-size-regular">
-                        <span data-i18n="jobs.interested">Interested in joining our team?</span> <br><br><span data-i18n="jobs.contact">We'd love to hear from you! Feel free to reach out to us at</span> <a href="tel:+3223310029"
-                          style="color: #f4c430; text-decoration: underline; font-weight: 700;" data-i18n="jobs.phone">+32 2 331 00 29</a> or
+                        <span data-i18n="jobs.interested">Interested in joining our team?</span> <br><br><span
+                          data-i18n="jobs.contact">We'd love to hear from you! Feel free to reach out to us at</span> <a
+                          href="tel:+3223310029" style="color: #f4c430; text-decoration: underline; font-weight: 700;"
+                          data-i18n="jobs.phone">+32 2 331 00 29</a> or
                         send your inquiry to <a href="mailto:beloria.contact@gmail.com"
-                          style="color: #f4c430; text-decoration: underline; font-weight: 700; text-transform: lowercase;" data-i18n="jobs.email">beloria.contact@gmail.com</a>.
+                          style="color: #f4c430; text-decoration: underline; font-weight: 700; text-transform: lowercase;"
+                          data-i18n="jobs.email">beloria.contact@gmail.com</a>.
                         <span data-i18n="jobs.closing">Let's create something exceptional together!</span>
                       </p>
                     </div>
@@ -843,7 +846,8 @@
             </div>
           </div>
         </section>
-        <section data-theme-section="dark" id="collaboration" class="padding-global padding-section-medium background-color-brand-100"
+        <section data-theme-section="dark" id="collaboration"
+          class="padding-global padding-section-medium background-color-brand-100"
           style="background-color: var(--color--neutral-0);">
           <div class="container">
             <div class="business_wrapper">
@@ -949,7 +953,7 @@
                     </a>
                     <a data-faded-link="" target="_blank"
                       href="https://www.google.com/maps/reserve/v/dine/c/KUP-glquwqE?opi=89978449&gei=W2xBaYbkNcv7i-gP59GHkA0&source=pa&hl=en-BE&gei=W2xBaYbkNcv7i-gP59GHkA0&sourceurl=https://www.google.com/search?q%3Dfritzguard"
-                      class="button-link_wrapper w-inline-block">
+                      class="button-link_wrapper w-inline-block" data-google-maps-reserve>
                       <div class="button_text-wrapper">
                         <div class="button_text">Order a table</div>
                       </div>
@@ -991,11 +995,18 @@
         <div class="padding-global">
           <div class="container">
             <div class="footer-bottom_wrapper">
-              <div class="footer-bottom_content">
+              <div class="footer-bottom_content" style="display: flex; justify-content: space-between; width: 100%;">
                 <p class="text-size-legal text-color-neutral-100">
                   ©
                   <span data="year" class="copyright_year">YEAR</span> Fritzguard
-
+                </p>
+                <p class="text-size-legal text-color-neutral-100"
+                  style="margin-top: 10px; font-size: 10px !important; line-height: 1.6;">
+                  <strong>BELORIA SRL</strong><br>
+                  TVA BE1027.929.982<br>
+                  Place Saint-Géry 26<br>
+                  1000 Bruxelles<br>
+                  Belgium
                 </p>
               </div>
               <!-- Todo -->
@@ -1964,28 +1975,28 @@
   <!-- Translation System Debug & Verification -->
   <script>
     // Debug script to verify translation system and active language button
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       console.log('=== Translation System Status ===');
-      
+
       // Check 1: Verify window.i18n exists
       if (typeof window.i18n === 'undefined') {
         console.error('❌ window.i18n is not defined');
         return;
       }
       console.log('✓ window.i18n exists');
-      
+
       // Check 2: Get current language
       const currentLang = window.i18n.getLanguage();
       console.log('✓ Current language:', currentLang);
-      
+
       // Check 3: Get saved language from localStorage
       const savedLang = localStorage.getItem('fritzguard_language');
       console.log('✓ Saved in localStorage:', savedLang);
-      
+
       // Check 4: Verify lang buttons exist
       const langButtons = document.querySelectorAll('.lang-switcher_wrapper [data-lang]');
       console.log('✓ Language buttons found:', langButtons.length);
-      
+
       // Check 5: Check which button has .active class
       const activeButton = document.querySelector('.lang-switcher_wrapper [data-lang].active');
       if (activeButton) {
@@ -1997,7 +2008,7 @@
           console.log(`  ${i}: data-lang="${btn.getAttribute('data-lang')}" class="${btn.className}"`);
         });
       }
-      
+
       // Check 6: Verify opacity styling
       if (activeButton) {
         const opacity = window.getComputedStyle(activeButton).opacity;
