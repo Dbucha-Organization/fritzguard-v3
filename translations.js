@@ -50,6 +50,8 @@ const translations = {
         "jobs.interested": "Interested in joining our team?",
         "jobs.contact": "We'd love to hear from you! Feel free to reach out to us at",
         "jobs.phone": "+32 2 331 00 29",
+        "jobs.or": "or",
+        "jobs.sendInquiry": "send your inquiry to",
         "jobs.email": "beloria.contact@gmail.com",
         "jobs.closing": "Let's create something exceptional together!",
 
@@ -124,6 +126,8 @@ const translations = {
         "jobs.interested": "Geïnteresseerd in het joinen van ons team?",
         "jobs.contact": "We horen graag van je! Voel je vrij om ons te bereiken op",
         "jobs.phone": "+32 2 331 00 29",
+        "jobs.or": "of",
+        "jobs.sendInquiry": "stuur je vraag naar",
         "jobs.email": "beloria.contact@gmail.com",
         "jobs.closing": "Laten we samen iets uitzonderlijks creëren!",
 
@@ -197,6 +201,8 @@ const translations = {
         "jobs.interested": "Intéressé par rejoindre notre équipe ?",
         "jobs.contact": "Nous aimerions avoir de vos nouvelles ! N'hésitez pas à nous contacter à",
         "jobs.phone": "+32 2 331 00 29",
+        "jobs.or": "ou",
+        "jobs.sendInquiry": "envoyer votre demande à",
         "jobs.email": "beloria.contact@gmail.com",
         "jobs.closing": "Créons quelque chose d'exceptionnel ensemble !",
 
