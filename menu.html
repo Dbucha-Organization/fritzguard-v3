@@ -9,6 +9,7 @@
     <meta name="description" content="Authentic Belgian Restaurant 🇧🇪🥔">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="translations.js" type="text/javascript"></script>
     <script src="https://use.typekit.net/zgp3gjs.js" type="text/javascript"></script>
     <script type="text/javascript">
         try {
@@ -382,22 +383,22 @@
                     <div class="menu_links">
                         <a data-faded-link="" href="index.html" id="homeLink" style="cursor: pointer;"
                             class="menu_link-item w-inline-block">
-                            <div class="menu_link">home</div>
+                            <div class="menu_link" data-i18n="nav.home">home</div>
                         </a>
                         <a data-faded-link="" href="index.html#our-story" class="menu_link-item w-inline-block">
-                            <div class="menu_link">our story</div>
+                            <div class="menu_link" data-i18n="nav.story">our story</div>
                         </a>
                         <a data-faded-link="" href="index.html#menu-section" class="menu_link-item w-inline-block">
-                            <div class="menu_link">Menu</div>
+                            <div class="menu_link" data-i18n="nav.menu">Menu</div>
                         </a>
                         <a data-faded-link="" href="index.html#location" class="menu_link-item w-inline-block">
-                            <div class="menu_link">Location</div>
+                            <div class="menu_link" data-i18n="nav.locations">Location</div>
                         </a>
                         <a data-faded-link="" href="index.html#jobs" class="menu_link-item w-inline-block">
-                            <div class="menu_link">Jobs</div>
+                            <div class="menu_link" data-i18n="nav.jobs">Jobs</div>
                         </a>
                         <a data-faded-link="" href="index.html#collaboration" class="menu_link-item w-inline-block">
-                            <div class="menu_link">COLLABORATION</div>
+                            <div class="menu_link" data-i18n="nav.contact">COLLABORATION</div>
                         </a>
                         <a data-text-fade-reveal="" style="display: none;" data-wf--button-dark--variant="bg-black"
                             data-w-id="13f2cc50-503e-cab7-033a-e2d3162aed40" target="_blank"
@@ -481,22 +482,22 @@
                                         <a data-faded-link="" href="index.html" id="footerHomeLink" style="cursor: pointer;"
                                             class="button-link_wrapper w-inline-block w--current">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">home</div>
+                                                <div class="button_text" data-i18n="nav.home">home</div>
                                             </div>
                                         </a><a data-faded-link="" href="index.html#our-story"
                                             class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">Our story</div>
+                                                <div class="button_text" data-i18n="nav.story">Our story</div>
                                             </div>
                                         </a><a data-faded-link="" href="menu.html"
                                             class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">Menu</div>
+                                                <div class="button_text" data-i18n="nav.menu">Menu</div>
                                             </div>
                                         </a><a data-faded-link="" href="index.html#location"
                                             class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">location</div>
+                                                <div class="button_text" data-i18n="nav.locations">location</div>
                                             </div>
                                         </a>
                                     </div>
@@ -505,7 +506,7 @@
                                         <a data-faded-link="" href="index.html#collaboration"
                                             class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">collaboration</div>
+                                                <div class="button_text" data-i18n="nav.contact">collaboration</div>
                                             </div>
                                         </a>
                                         <a data-faded-link="" target="_blank"
@@ -517,7 +518,7 @@
                                         </a>
                                         <a data-faded-link="" href="index.html#jobs" class="button-link_wrapper w-inline-block">
                                             <div class="button_text-wrapper">
-                                                <div class="button_text">jobs</div>
+                                                <div class="button_text" data-i18n="nav.jobs">jobs</div>
                                             </div>
                                         </a>
                                     </div>
@@ -1505,6 +1506,51 @@
                 }
             }
         }
+    </script>
+
+    <!-- Translation System Debug & Verification -->
+    <script>
+        // Debug script to verify translation system and active language button
+        window.addEventListener('load', function() {
+            console.log('=== Translation System Status ===');
+            
+            // Check 1: Verify window.i18n exists
+            if (typeof window.i18n === 'undefined') {
+                console.error('❌ window.i18n is not defined');
+                return;
+            }
+            console.log('✓ window.i18n exists');
+            
+            // Check 2: Get current language
+            const currentLang = window.i18n.getLanguage();
+            console.log('✓ Current language:', currentLang);
+            
+            // Check 3: Get saved language from localStorage
+            const savedLang = localStorage.getItem('fritzguard_language');
+            console.log('✓ Saved in localStorage:', savedLang);
+            
+            // Check 4: Verify lang buttons exist
+            const langButtons = document.querySelectorAll('.lang-switcher_wrapper [data-lang]');
+            console.log('✓ Language buttons found:', langButtons.length);
+            
+            // Check 5: Check which button has .active class
+            const activeButton = document.querySelector('.lang-switcher_wrapper [data-lang].active');
+            if (activeButton) {
+                console.log('✓ Active button:', activeButton.getAttribute('data-lang'));
+            } else {
+                console.error('❌ No button with .active class found!');
+                console.log('Button list:');
+                langButtons.forEach((btn, i) => {
+                    console.log(`  ${i}: data-lang="${btn.getAttribute('data-lang')}" class="${btn.className}"`);
+                });
+            }
+            
+            // Check 6: Verify opacity styling
+            if (activeButton) {
+                const opacity = window.getComputedStyle(activeButton).opacity;
+                console.log('✓ Active button opacity:', opacity);
+            }
+        });
     </script>
 </body>
 
